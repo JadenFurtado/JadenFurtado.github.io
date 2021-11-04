@@ -6,3 +6,5 @@ I have always had a passion for coding, love for pure maths, got into hacking wh
 
 ### you can read my writeups of some of my hacking work in my github repo link: <a href="https://github.com/JadenFurtado/security_writeups">Writeups</a>
 ## My art account: <a href="https://instagram.com/furtado_art">Click here</a>
+<br>
+<br>
