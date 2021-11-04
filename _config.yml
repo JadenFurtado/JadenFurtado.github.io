@@ -1,5 +1,7 @@
 plugins:
   - jekyll-relative-links
+name: "Jaden Furtado"
+title: null
 relative_links:
   enabled: true
   collections: true
