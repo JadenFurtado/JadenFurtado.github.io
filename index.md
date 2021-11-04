@@ -1,5 +1,3 @@
-![](https://komarev.com/ghpvc/?username=JadenFurtado&color=green)
-
 # Hi, I am Jaden Furtado
 ## An engineer, developer, hacker, artist and musician. 
 <img src="https://github.com/JadenFurtado/JadenFurtado/blob/main/a.jpg" />
