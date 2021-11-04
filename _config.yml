@@ -1,3 +1,5 @@
+
+theme: jekyll-theme-hacker
 plugins:
   - jekyll-relative-links
 name: "Jaden Furtado"
@@ -7,5 +9,3 @@ relative_links:
   collections: true
 include:
   -INDEX.md
-
-theme: jekyll-theme-hacker
