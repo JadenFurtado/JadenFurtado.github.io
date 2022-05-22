@@ -16,6 +16,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
+		<link rel="manifest" href="manifest.json">
+		<script src="app.js"></script>
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
@@ -48,7 +50,7 @@
 							<h2>About me</h2>
 						</header>
 						<div class="content">
-							<p><strong>I am an all rounder.</strong>I have always had a passion for coding, love for pure maths, got into hacking when I was in school, been drawing and playing the piano since I was 5 y/o. I love to test my limits and see what I am capable of. <i>Everything is just the way it was meant to be!</i></p>
+							<p><strong>I am an all rounder.</strong>I have always had a passion for coding, love for pure maths, got into hacking when I was in school, been drawing and playing the piano since I was 5 y/o. I love to test my limits and see what I am capable of.</p>
 							<span class="image main"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAACVVBMVEUBV3gpKSnd3d3////FxcVbdHsAAAA4ODgAVHb7+/vKysoAUXQsb4z/ngdIUlvk5OI5QEYxMTGGmaW4uLiMpLFKfJTR0M6bsLmJiYnX19dwcHCnr7WWo6x4mKLN7/ECNEgWXnt4eHjHzc60tLTnmG12f4ZvgIMdHR0ADhEB3MZvi5YA/wChoaHu9vj/fgBWVlZKSkpAQEAAIiz/wl9o1KrroGqlbUwAyNsmNzsAv88rEAgqIyQA0OEDf3EkSk4fVVsCPlcacnoqGRUNn61mhpoASG55qLf/4ni95ej9AAAsAAB2TTgDt65QTz//43gAVH0vPEdKb3y+i280+z4fTGJP5NU/TVosR1KKtNKRbzrunaQAs+5lf2lFnUcswy4S7xVRglfleRn9iQbslRU2Z3hKZm8GHBxLhpuYws1kl6cCQW1/tsRs5doCr6sDZ38AJj5dRTgFyLrdv6jN9PrhrIsFh5Gm7+cAHSrusnCDczyh9usA6s7+ycr/6OnD/sORbV17aWBELB/6ZGT87df8l5b91LH9yZn879zT/9OTdHa4hIVpYGbgl5izh0NLk3gAmoukkmm1pGmciErMtmxbvXNa7ntSsW7XkWqP/6B1q4L4yHKc+adHX1uF0pFbeWyWgmdoa15ln8urv9Vxqc8+eGFFkcX/LkRUaENsXTQfiKl8mUK97kGYgi7/wwBWX4BveKq/Y0GacrTalPyOSWP/MV2CXolMQlqtSmq6N1JfgECCrEP3KCkAsWCp0L224j3ucG15zfB5QjSLVzbJdCrOcynGgiGycDcwKvWXAAAS/0lEQVR4nO2di2PT1r3HHdspcmwkBYNjOSEocpxH8SOhI7Zj4xCb8AoQhxk7UDZeSQkt3djWlFx613Db7vbyKttuYaykrElgY93W3T7WvdqtPMrfdX/nSHIky6/YMraDvm3kI1m2jz58z+/8zpEs63SaNGnSpEmTJk31JgIt2HRJUx4R7OR4I9b4JFvtytS4WIGUyAvoaQbLIRkqjIvVYGUXm4kKabLatapNZWWl0comIgcroKU1xEzlZKV5K1OEMrZLxFa7erUlYjIPq8bxalevxpTPWJq15MoTsbSolaH8rRBU7QrWlDJa4dSU8PC81g4VymyFJsO6qcauVsZk6NJgZSgjIZ1ap2c4jjIgtQhBS0tM05LB6mrjpqZaAZSHaxOM1TiuwUpLCmuKMxinGjdSrc83TqU3arCWJXNWm0G/rouTkNKaoUzymNUFAb5NHvG1REuijN7QY1gn38BWu4I1JGK8AKxqV7CmNJkfljaSlorND0sLWVJltMNMWNWuXq0pHyzNWDIR8nkHOSwtYmVK1hDlsNhq160GNZ4DFqtl71k0nhUWW+1q1abYdNwypWGVF6+2bypB29U5mkqLEK8LabV2if1gWdc6bHmuBG1S7XgqLellNONlpwwAqyebMBT5ppdeEp+qH1g6Alrj5Pj4pCpXZ2157jwB3syUbhOCtV26aWRf7wh6ZFWGpfzw7KqBS/cAVtbtPCxUEls5goUL6sIiLBuKVdVpFYJlZk9bzLiWFYJlYWzFqcm23qzi55aiArDMr7S3t+/eYAZVBhaxwaYvUk0ttQgLGYmHZd7ZjnV6enqnBksGizCjBkewaDofw0ps2N2e1rQGaxkWYd5w5ozFbHZ0djrMPKyWdql+1PsypvmswzKPmEcs2EWvNHZ2dm51jGXCOnvobG/vq6+++gPiWYc1cmb37mm+xdk6sVw/lMMCUrz2mZ9xWCOvpKEIrDo7z+WA9aNn3FnmDSKSn6RZdY4iWOM7Re3TYOkQrC2v7Fay4mFtNwsaeTUN69luhr6fpBtbZyYsYSczu+ysHxAaLGSsH+eAZU77Cof4ZxnWfDpivZYdlnnmDSms3tqAZa6Y8sHaMr1bEMDaKrDaKoEF45zedpOpvbf3dYPJUxlYTFN+KWCxG9dVSBvZPLDOm0d4vXywc/bALl4H/kPiLIDlMRgAU7vBYKgMLJsxvzJhmTcWoFuGck9uSMaGYwVhvV4dWE1ZYRXAW7Ka2oqFtUtUBqzeQ4d68fJQFWDZ3YpmiGBVxlfFw8oe4Pf1VjzA54NlddizwqIMJpMB/tSUgSoP1ph53xu9Zy9cOPtG76ELFy70vvHUneW0Zm2G6GLt//wpLEzvosWbJoMKyg2LTSW2PNeTPh147uEoaO7iHCz/C8Fasx/r7rZtdtC2bV12u3vbtoqkDkx+5YD11p49PzW8PTv7M4Pn2OZjWWhRJhOlB8MYTYzHZCsHFkGC6B7ZKcFAMkmST/G8YYl5ltAM9+zZ847hZ7Oz/214c/PmzW8qj93oRrJTTrfTbXeX5SwSi5ag4rd01wksw7+Rs96dnX3bYPru5u9mcxZFMRS8lqL08FAOLJYkZXB6oJhE6w31AkuIWZjS/xSBogxYCTJ56cjlK8hcSMhWVy4fuZwkA08fVgkxq2jKK5EtD6zLR45cJiW6dOTIVZK8ODCAJ/9GB65dGxi49t71661OZ+v16y1Op/P69VrJ4DsK/JOWJEdTblhXr15JkjJdPkIm5zo7H6JXDmx94YWtW1/4jmy48/RThxyw7N0Nqqs7DyzyEpmp5CUy+fNdH/wSw+oUYQEmPJA2mGpnbPh0YbEKUgKvXxw4kAGrmhl8bcDS5YL1vxqsYmDhAJacnZ09LId1ob39Qm/v2fb21ysEq8DwtgZgAZrknbvz6RCfnL97Fz12igG+M0uAr4mZ0uo46/0b7999H3FC4G4ev3nj/Xky9SsNlkIsmTx668bN+Rs3v0y6W8nk8Rt3j9+49etk8hcffJDRDA+dPXsIL88+a7AIXQoS9gTuDW/fujl/63bcaTBw8Q9v3T1+6/adavSGtQsLs6L7E5BnkXdu3/717aMuNCxqnb/94Ye330tCnqWEJc6U1iysEPyXLsoUEiVZy7VzFmcBKMQrhWPVnaPxKxCRICq54kfv4Nj1G0UzrP2YFY0Fh0JCIRhApVAACoNBiZpDQ36hOIR3aQjN+GeieWElaBovaNwFxkm3yWCPx8FdVlhBAA/WYYAfDPpFWP5gAG8KBMOBQf+ygOFQWCiHY3if6Ex4JhoqCEuHrZVMOloBhMEYT6KpMZPRkUwmryhTh9c9HsiwLng87bUIKxqIAKNwDHtlGFDEoiI1gDUcEdUAsIIBXIz5h4FRKILARgLR3LBYAVa/LmFHE2JoOshpFwqU+6NZZVJaywE+NDgcgxYW8AcxomEwT2wQeS0WHg4BrMhyzEKwBnE5Eg6il8JDqCEYG94byh3g+xPgr1RCl3CgGTSP0aN3uRgPh8h5XD8/sGtX/fSGoYahIG5hAT8KPxCo/LAOLRJZbAjBGlpuZhgWLgQwrGgQGQy9foiP9NnyLGwt/EhDwDJQzlaPydmKWEHYiu9Swnrdg07fXzA9nWZIcYtUcbBC0eFYOBxDTSo6gwyFKOxFlkIWg3XkrMEoluCsvag8CE/C+l5/eAjtGQv74T1C2WEl6JQIiyady3PXxinYEIectLq94cTE4gJTBKxQaCiWdgXAgv4QBaq98IfCOwpdACsmCACiAM+viOaLLbszNhQKZc3gcUMUesRk3G5Ep4ya3EkazTDH56o6NmS4xQmK4hYYrhCs9CGKyQPYZG8QYhR0g9hikB6g3jDMC9BB6iCsYUrwCiFxCEV57IGsw50U8paYPiRJxmi0ufCAOjusQxU+fb+MClx1b2JhaWlhYnGJyw8rAqE82CCyagih/nDYj2H5ZwZnwiiDAFgzw7yGsLOC/ArYLoRhCa8ORVHo8keyjw1T/XQiQQu0aAYCFz/zALB+1amYVpaoItPK6Wg1wVEMcOImlsBeCwWaYSQG0Xw4IiZKkAc0QJKJmlc4xgcuHLOist5wLypGI8FgBKWoYvIRAXxByL2ywiJ0BB70CJkpZKTupAhrVDwjfW708OGHDw/f3SZTRZ21ROkXJvQUtMN7HDVRKGZFIzNhf3AmEOUzdnARblihyXBwJhie5GFl6w0hqEN3ALDwWjQEe/tnItF8UzTLaTyt94jGopsLngKpIKzFxaUlhjryDkMtLXELVH5YaKQXgOMEXHw+itslEnRvfI6aB9ZMNBiOoOeEtwjlSB2EikJ36HDx0372Vt5Yjo5CrHq6uzclKgZLf4+bYPS//e0Raom6t1jAWfj4Q4GYPxxsTsMa5JN3Pz/oy5VnAc4YwMJPQbCaiYRy5lm8WJbVNdrk08pGp70jnxx826VTbGVgLUKwYqh33rJRKH8o6Cwh4MxgWA3NMZw3IbP4hQFiLlixMMQs6DQxrJnIYEPODJ6vpgWf6+UcSTz5kMQPpLHAmWERFu0+rcoXSxUBnmLuLVLoEgV4KBSz0gyE+RcwVJgfQw8KFkOF9NhZMpBGmcQg3wXglzcUhIW/IMq47S6HwyUsXYW+V+oTYdkrAksPtuLuTXDM4gL0hktFwhIVhd5RgBUMCrByTNEEhwNRfjAtUwFYNlur1cZw7lYrZeRam/KSApKkCKtDna8sZ8LilhaB072FJWiFE8XELJkCgYDgNSiFxE1pSVdDqKx4g4KwmCarFVqfES3zs3KSVh/ZiHrQLrqjka4ELMCFIEEGv7jIUSuFtaxQ5nxp9p2Kh8WtVPaAj+5a56JpV1tXX1+/Gn1itrEhtbDILXCKzVU+u7NSJfpTcVdbI4LVmEpVDJaeWpxQjqOrfd5wxUrp4jSOWiQMLVVJtnLMZ2WZoakzWCiix8UAnxJ+gqvc96z5U2ElKwUDStFZbEqN7nD1wuJjFg7wrniKrljMWh2waICFesOutq54BQP8KoGVSOE8i55CzVCNt6wDWOykmA2s9OBS6QCvzj2H6gBWpLu7u2FNd/ea7pXdrSwhgVXR1KGWYAW6u8830OcBVmQlB5boT6QaUVLqaHNUNCmtJVhsIDW5/3d991OTgRUFHjSxigM8LOJ0xXpDm/voUbu1MKyGZtXV0KF0VvPvX/z4D3/80/iLqZXBQpcpuSDRgkUiUSlY1qPfP3bs2PfcBWDBwL8SUnzDgg188uf59879H/nnFcfphBizVJpZVsKyHT22Gel7zgKwilaT1Vn8zpmwLFzg088sL37+xV8++7Jj/cpoVR6W+/uY1eZjXWrBcnd02EuFRexgAp//9f4vf/fx/mtrOriVpWCECEsdVmlY6Ukzys4ba/Pm44w6sKzo3IG7DFh/++KPf0JR635X08jKji6hqrGUzpLBSiN8SrCsWWDZAn//xyefJu7F4/GVOkugpdq5MPEmGP/8p+07X30ta4ZHYbPNhok9rWaIY1sGLPf5j//1F4haSTrus9YErKt79lz96qubGQGeWqfT7aAsLNFaFixjcQEebAWdoVUBKxCP04H+NXQJsIiKwNL/+y3m65tfZ6YO09988w0Ff7szYeksLa2FpfxaizX/C9rQwiKrH8ASw3StOAt9iXk5eSiclKI7XxYUy9maJKdgGKaJ2TGSa+eRly1nNuxYv8Fy2izND2oSljzIKzdlwirmrS1NDtKdpsVYfT7rjlxvYd4xzTEMwNVz06clfR7fDOMReg0dCNQkrOxa8f2zLI1OG9nBiOfxmp22KzlPdk4z7rnRB6DRObd+epkWwNry8b/++oXlxU8++3K+NFiqzGXhylQAlnib7+128AptFWj53AxjjAtPmuXQzKetDx4OHHztIPw/8PCBcbkpImf9/R+f/23y9598SpforBqGRWwUovU6EmcDVmlaYG8Unmxh5bVwPhgdeO3td999++DA6APnzvXixQkI1vkfbgn0NXS/1L36YJnb+CG20edWjrWNpFMoyV/EemyXRh8e/PHBhw/mLtkM3EZOoAWw6J7uniuuvp6entUIi6fh9jmRcPaEMEG2BbL7jNlgmTmPx4O+fGzTo4Ju5PTGNCyHT1RHdWGZRyxM0TfCasnZ78tyAAEWSZM+H0mSvg58OxoHLvto2s0/Lc89RnaaPGmZzphPcxbhiR22tC2hIb+c96MrC8u8fv16hipWLeuLEsdfSUb68KPN6CQDgYDbiBIthnEHrPyVZhkvavFI1MItf1aLtAZc3g/eoexqVYTFjqhy/5jsstvFUqvb6BPLDJ3jNlsSZ+kpT0mfyCnnJNR01lhJlSpOpjQgF2XwiYic1lz7S5phiZ84rWyHGFZcHVi6EqtVlBzCQesdyFzCRjuTc3+RVckfmAVWSsW5P7bkihUhp50ymUweow/xcbjxSpMv9/4mFJX0VOl3w6tnWAYnvr7azf+Qu9UFZZc9PwpTWfcNzJLa8LBYVWBZVL4ZZMatIQ2m5ftN8o+V/DwFrLGxsUS/as4iLEWnDdVVtnkQSp+5lxzWGDvw6MTDuIrnKywglz2vXJbqyykIp6ai1mXuxUpsoBu76AWpCgtNABSA1VXsj4lVTDqdWxA/aBJWnjcr9lsWZnXy5CiC1a8SLMSrICz1PqtUZYeVr2KTgGrt2rX3084iVPmNYQzLl0MddQpr7InXu1aE1c/ClinvExUqgmE1r8mqZke9wuJZrb3Pn2QliLHHXu9H5R9JHcFylgYr/mhucgBC2MBY2RWpB1hCb7eDh/U8m9n5KQRGQiFr7X7UDOOPvVgXnw1n8TJvMPKwhHwqT8WIOSFm9e3v27//EeoZvd6p8qtQP7AIEVYRNSKEdpjWSe9jFQ5kdcKC7vCkDJYqrXCVwiI+wtb6lheGNaXByrXvJIJ1Cp3NjsfPIVgnVKnCaoaFE/j4fQ1W3l3R2BBgbVp2ltYMc2rsEQ7w0pj1RG1Y4vXodQ9rPjN1AFo+dZPSZvFeG331DutERuaAEq0TbPlVkMISZx8dzXUNi3gkGOsUL8FaA2UfigyWeMlLfcMSBztrT/FXDO4XrFV+jJfFLPELR8113QxZsRHysOhz6RFPufMOq683HBsQo/spGqcO2FnQJ5Yf41cfLEl0P4z1BErn4psOn/Q+KtNaqw4WQSrSBvDVJohdp7xetswqIFh9OVQjc/C8ioV1UZE2AKw4D6vMqeV6OLvDq1hYAxJY6cyhLw5DRK93ToMl300C6xSEd3oTonXq2hPUH2qwMnabk8JCedYpyQxgmVUAWL7+HKpHWLorkgAvcvr2Gg9rqMwqIFg5esM1dQlrUtkbfrsJTWpBDq9C6uDLwao+nUU8VnSH9+N0H4L1ZIwtrwqrD9ZHCmuBsw4jY5V7wcPqg4WspaD1LWL1RI2x4SqDhaKWImwBq/Kn4VcjrLEpr1cet04iVuVfdbQaYemIyRNefDVbmpTX+4hVoQp1BIu/TLIYWJCanvBK9Tjf7Mz/A5hdSa7mQqRWAAAAAElFTkSuQmCC" alt="" /></span>
 						</div>
 					</section>
@@ -56,10 +58,10 @@
 				<!-- Section -->
 					<section>
 						<header>
-							<h2>My Expertise</h2>
+							<h2>My Experience</h2>
 						</header>
 						<div class="content">
-							<p><strong>Web Pentester</strong><br>R.U.D.R.A secure<br> from Aug 21 - Present<br>
+							<p><strong>Offensive security engineer</strong><br><a href="https://rudrasecure.com">R.U.D.R.A secure</a><br> from Aug 21 - Present<br>
 								A cybersecurity startup in Mumbai, I was lucky to come across them at an OWASP meetup. As an intern, I was able to get hands on experience doing security tests on their client websites allowing me to grow as a hacker and researcher.
 							</p>
 <!--
@@ -88,10 +90,10 @@
 							<h2>My projects</h2>
 						</header>
 						<div class="content">
-							<p><strong>A collection of some my projects, for commercial, college work and personal.</strong> </p>
+							<p><strong>For my projects, checkout my <a href="https://github.com/JadenFurtado">github account</a> and my repositories.</strong> </p>
 
 							<!-- Section -->
-								<section>
+								<!-- <section>
 									<header>
 										<h3>Parish website for OLEP</h3>
 										<p>I was happy to be able to design and build the parish website for OLEP, kalina.
@@ -102,29 +104,27 @@
 											<a href="images/olep1.jpg" class="landscape"><img src="images/olep1.jpg" alt="" /></a>
 											<a href="images/olep2.jpg"><img src="images/olep2.jpg" alt="" /></a>
 											<a href="images/olep3.jpg"><img src="images/olep3.jpg" alt="" /></a>
-											<!--
+											!--
 											<a href="images/gallery/fulls/04.jpg" class="landscape"><img src="images/gallery/thumbs/04.jpg" alt="" /></a>
-											-->
+											--><!-- 
 										</div>
 									</div>
-								</section>
-								<section>
+								</section>  -->
+								<!-- <section>
 									<header>
 										<h3>Cybersecurity research</h3>
-										<p>I enjoy pentesting websites and applications, researching new hacking techniques and cybersecurity as a whole, and in the course of doing so, I have been able to help a number of agencies, MNCs as well as governments secure themselves. <a href="https://github.com/JadenFurtado/snakeGame">Link to my writeups on github.</a>
+										<p>I enjoy pentesting websites and applications, researching new hacking techniques and just cybersecurity as a whole, and in the course of doing so, I have been able to help a number of agencies (MNCs as well as governments) secure themselves. <a href="https://github.com/JadenFurtado/security_writeups/">Link to my writeups.</a>
 										</p>
 									</header>
 									<div class="content">
 										<div class="gallery">
 											<a href="images/snake1.jpg" class="landscape"><img src="images/snake1.jpg" alt="" /></a>
-											<a href="images/snake 2.jpg"><img src="images/snake 2.jpg" alt="" /></a>
-											<a href="images/snake3.jpg"><img src="images/snake3.jpg" alt="" /></a>
 										</div>
 									</div>
-								</section>
+								</section> -->
 
 							<!-- Section -->
-								<section>
+								<<!-- section>
 									<header>
 										<h3>Snake game</h3>
 										<p>A basic arcade snake game written by me in C++ for my Computer Graphics term-work in sem3. I chose C++ to make use of OOP concepts and thus ensure rapid development and good runtime execution of the code. <a href="https://github.com/JadenFurtado/snakeGame">Link to the code on github is here.</a></p>
@@ -136,10 +136,10 @@
 											<a href="images/snake3.jpg"><img src="images/snake3.jpg" alt="" /></a>
 										</div>
 									</div>
-								</section>
+								</section> -->
 
 							<!-- Section -->
-								<section>
+								<!-- <section>
 									<header>
 										<h3>Vocal for local</h3>
 										<p>A project built by me and my friends to support local stores. <a href="https://github.com/JadenFurtado/hospital_Management_system"> Link to code on github is here.</a></p>
@@ -151,7 +151,7 @@
 											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
 										</div>
 									</div>
-								</section>
+								</section> -->
 								<!--
 								<section>
 									<header>
@@ -465,7 +465,7 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 							<h2>Get in touch</h2>
 						</header>
 						<div class="content">
-							<p><strong></strong> Want me to work on your site/app, want to see more of my projects or just wanna have a chat about the latest in the tech industry or in cyber-security? Feel free to contact me.</p>
+							<p><strong></strong> Want my help with a project or just wanna have a chat? Feel free to ping me. Note: I am far more active on twitter and linkedin than I am on email.</p>
 						</div>
 						<footer>
 							<ul class="items">
